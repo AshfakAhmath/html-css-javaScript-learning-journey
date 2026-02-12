@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainbox{
+    background-color: aqua;
+    width: 500px;
+    height: 300px;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.subBox{
+    background-color: black;
+    width: 100px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.subBox div{
+    background-color: yellow;
+    width: 70px;
+    height: 9px;
+    border-radius: 5px;
+    margin: 5px;
+}

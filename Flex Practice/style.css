@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Arimo", sans-serif;
+    background-color: darkslategrey;
+}
+
+.titlebar{
+    text-align: center;
+    margin: 20px;
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container div{
+    width: 200px;
+    color: white;
+    margin: 10px;
+    flex-basis: 23%;
+}
+.container div img{
+    width: 100%;
+}
