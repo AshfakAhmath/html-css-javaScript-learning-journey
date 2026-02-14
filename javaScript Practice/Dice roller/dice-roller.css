@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#container{
+    text-align: center;
+    margin: 50px;
+}
+#btn{
+    padding: 10px 20px;
+    font-size: 3rem;
+    border-radius: 5px;
+}
+
+.btn{
+    font-size: 3rem;
+}
