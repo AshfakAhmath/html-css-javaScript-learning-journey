@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h2>My Tasks</h2>
+
+        <div class="tasks">
+            <div class="input">
+                <input type="text" name="" id="taskInput" placeholder="Input">
+                <button onclick="getTask">Add Task</button>
+            </div>
+            <div class="listContainer">
+                <div class="task">
+                    <div class="box1"></div>
+                    <p id="task1">Complete Report</p>
+                    <button class="delete">🗑️Delete</button>
+                </div>
+
+                <div class="task">
+                    <div class="box2"></div>
+                    <p id="task2">Hover Effect</p>
+                    <button class="delete">🗑️Delete</button>
+                </div>
+
+                <div class="task">
+                    <div class="box3"></div>
+                    <p id="task3">Buy Groceries</p>
+                    <button class="delete">🗑️Delete</button>
+                </div>
+            </div>
+
+            <div class="statusBar">
+                <p>Total Tasks: <span id="statusCount"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
