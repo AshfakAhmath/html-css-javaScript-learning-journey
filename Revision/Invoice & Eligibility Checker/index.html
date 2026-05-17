@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INVOICE</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Freelancer Invoice & Status Hub</h1>
+    <div id="container">
+      <div id="formInput">
+        <form action="">
+          <h3>Input Parameters</h3>
+          <label for="hourlyRate" class="label">Hourly Rate (LKR)</label><br />
+          <input
+            type="number"
+            id="hourRate"
+            class="input"
+            placeholder="LKR"
+          /><br /><br />
+
+          <label for="workHour" class="label">Hours Worked</label><br />
+          <input
+            type="number"
+            id="noHours"
+            class="input"
+            placeholder="100"
+          /><br /><br />
+
+          <label for="hourlyRate" class="label">Overhead Costs (LKR)</label
+          ><br />
+          <input
+            type="number"
+            id="cost"
+            class="input"
+            placeholder="LKR"
+          /><br /><br />
+
+          <div class="btn">
+            <button type="button" onclick="generateInvoice()">
+              Generate Deatil Invoice
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <hr />
+
+      <div id="output">
+        <h3>Calculated Output</h3>
+        <div class="outputs">Gross Earnings: <span id="gEarn">LKR.0</span></div>
+        <hr />
+        <div class="outputs">Net Income: <span id="nInc">LKR.0</span></div>
+        <hr />
+        <div class="outputs">Tax Estimate: <span id="tEst">LKR.0</span></div>
+        <hr />
+        <div class="outputs">
+          Final Take-Home Pay: <span id="fTHP">LKR.0</span>
+        </div>
+        <div
+          id="statusTier"
+          style="font-weight: bold; margin-top: 10px; text-align: center"
+        ></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
