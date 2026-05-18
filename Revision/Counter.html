@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="countNumber" id="countLabel">0</label>
+    <div>
+      <button type="button" id="decreaseBtn" onclick="decrease()">
+        Decrease
+      </button>
+      <button type="button" id="resetBtn" onclick="reset()">Reset</button>
+      <button type="button" id="increaseBtn" onclick="increase()">
+        Increase
+      </button>
+    </div>
+    <script>
+      let count = 0;
+      const decreaseBtn = document.getElementById("decreaseBtn");
+      const resetBtn = document.getElementById("resetBtn");
+      const increaseBtn = document.getElementById("increaseBtn");
+      const countLabel = document.getElementById("countLabel");
+
+      function increase() {
+        count++;
+        countLabel.textContent = count;
+      }
+      function decrease() {
+        count--;
+        countLabel.textContent = count;
+      }
+      function reset() {
+        count = 0;
+        countLabel.textContent = count;
+      }
+    </script>
+  </body>
+</html>
