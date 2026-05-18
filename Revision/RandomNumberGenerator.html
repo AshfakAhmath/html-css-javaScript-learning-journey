@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script>
+      const min = 1;
+      const max = 100;
+      const answer = Math.floor(Math.random() * (max - min + 1) + min);
+      let attemps = 0;
+      let guess;
+      let running = true;
+
+      while (running) {
+        guess = window.prompt("Enter the number: ");
+        guess = Number(guess);
+        if (isNaN(guess)) {
+          window.alert("The input is not a number.");
+        } else if (guess < min || guess > max) {
+          window.alert("Please enter a valid number");
+        } else {
+          attemps++;
+          if (guess > answer) {
+            window.alert("Too Laarge!");
+          } else if (guess < answer) {
+            window.alert("Too smaaal!");
+          } else {
+            window.alert(
+              `Guess = ${guess} and answer = ${answer} are same. You win. Attemps are ${attemps}`,
+            );
+            running = false;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
